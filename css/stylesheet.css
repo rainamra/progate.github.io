@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 body {
     margin: 0;
     font-family:"Lucida Grande";
@@ -5,6 +7,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1,h2,h3,h4,h5 {
@@ -30,6 +36,96 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+}
+
+.title {
+    text-align: center;
+    color:#bbb;
+    font-size:14px;
+    font-weight:bold;
+    padding-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #00529b;
+    font-size:  2.25rem;
+    font-weight:bold;
+}
+
+
+/* HEADER */
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color:rgb(87, 75, 144);
+    position:fixed;
+    top: 0;
+    z-index:10;
+}
+
+.logo {
+    width: 95px;
+    margin-top: 3px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+    color: black;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display:none;
+}
+
+/* MAIN 1 */
 
 .top-wrapper {
     background-image: url(../image/front-building.jpg);
@@ -50,17 +146,8 @@ a {
     margin-bottom: 20px;
 }
 
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.btn {
-    padding: 12px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.9;
-    border-radius: 30px;
+.top-text {
+    max-width: 800px;
 }
 
 .find {
@@ -68,43 +155,87 @@ a {
     margin-right: 10px;
 }
 
-
 .top {
     background-color: rgb(48, 57, 82, 0.3);
     padding-bottom: 50px;
     padding-top: 25px;
 }
 
-.btn:hover {
-    opacity: 1;
-}
-
-.heading {
-    padding-top: 60px;
-    padding-bottom: 30px;
-
-}
+/* MAIN 2 */
 
 .what-wrapper {
-    height: 750px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
-.card {
+.what-item{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 0px 100px 20px;
+    text-align: left;
+}
+
+.row1 {
+    padding-left: 10%;
+}
+
+.column {
     float: left;
     width: 30%;
-    padding: 20px 20px;
 }
 
-
-.card img {
-    position: relative;
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.txt-content{
-    position: absolute;
+.text-top {
+    color: whitesmoke;
 }
+
+.img5{
+    background-image:url(../image/blue.png);
+    margin: 30px 20px;
+    background-size: cover;
+  }
+
+  .img6{
+    background-image:url(../image/girls.jpg);
+    margin: 30px 20px;
+    background-size: cover;
+
+  }
+
+  .img7{
+    background-image:url(../image/orange.png);
+    margin: 30px 20px;
+    background-size: cover;
+
+  }
+
+  .img8{
+    background-image:url(../image/hall.jpg);
+    margin: 30px 20px;
+    background-size: cover;
+
+  }
+
+  .img9{
+    background-image:url(../image/pink.png);
+    margin: 30px 20px;
+    background-size: cover;
+
+  }
+
+  .img10{
+    background-image:url(../image/lab.jpg);
+    margin: 30px 20px;
+    background-size: cover;
+
+  }
+
+
+/* MAIN 4 */
 
 .main4 {
     background-image: url('../image/people1.jpg');
@@ -112,10 +243,9 @@ a {
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 4rem !important;
     height:800px;
     position:relative;
-    margin:100px 0 100px 0;
+    margin-top:100px;
     color:rgba(255, 255, 255,1);
 }
 
@@ -152,80 +282,36 @@ a {
     width: 100%;
 }
 
-.contact-us {
-    text-align: center;
-}
-
-.submit {
-    background-color: #d76c2d;
-}
-
-
 /* FOOTER */
 
-.footer .footer-links {
-	padding: 100px 50px;
+.footer-links {
+    margin-top: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bottom-footer-list {
+    padding-top:30px;
+
+}
+
+.bottom {
+    padding-bottom: 60px;
+}
+
+.bottom li {
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: aliceblue;
-    padding-top:50px;
-}
+    background-color: rgb(89, 98, 117, 0.2);
 
-.footer .footer-links .footer-list {
-	float: left;
-	margin-right: 100px;
-}
-
-.footer .footer-links .footer-list h3 {
-	color: #000080;
-}
-
-.footer .footer-links .footer-list li {
-	list-style: none;
-	padding: 5px;
-    color: blue;
-}
-
-.footer .footer-bottom .bottom-footer-list {
-    text-align: center;
-    float: left;
-    position: relative;
-    margin: 5px;
-    overflow: hidden;
-}
-
-.footer .footer-bottom .bottom-footer-list ul {
-    list-style: none;
-    display: flex;
-    margin-left: -1px;
-}
-.footer .footer-bottom .bottom-footer-list li {
-    margin: .25em 0;
-    padding: 0 1em;
-    text-align: center;
-    border-left: 1px solid;
-    color: grey;
 }
 
 /* MAIN 3 */
-
-.title {
-    text-align: center;
-    color:#bbb;
-    font-size:14px;
-    font-weight:bold;
-    font-family:inherit;
-}
-
-.section-title {
-    text-align: center;
-    color: #00529b;
-    font-size:  2.25rem;
-    font-weight:bold;
-    font-family:inherit;
-}
-
 
 .column1 {
     float: left;
@@ -243,20 +329,11 @@ footer {
     clear: both;
   }
 
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column1 {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
   .content-item{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 230px 0 0 0;
     background-size:100%;
-    margin:2 20px;
+    margin: 0 20px;
   }
 
   .img1{
@@ -279,7 +356,7 @@ footer {
     margin-left: 5px;
   }
 
-.see{
+.see {
     background-color: #d76c2d;
 }
 
@@ -305,6 +382,19 @@ footer {
 
 /* Contact Us */
 
+.contact {
+    width: 50%;
+    padding-bottom: 100px;
+}
+
+.submit {
+    background-color: rgb(196, 69, 105);
+}
+
+.btn-contact {
+    text-align: left;
+}
+
 input[type=text],textarea {
     width: 100%;
     padding: 12px;
@@ -314,30 +404,4 @@ input[type=text],textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin:20px;
-    width:100px;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.container-contact {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: left;
-  }
-
-.contact-us h3{
-    padding-bottom:50px;
 }

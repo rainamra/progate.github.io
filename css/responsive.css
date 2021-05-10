@@ -1,0 +1,121 @@
+/* For Tablets */
+@media all and (max-width: 1000px) {
+    .main3 {
+        width: 50%;
+    }
+
+  .column1 {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .main3 {
+        width: 100%;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    .row1 {
+        padding-left: 0%;
+    }
+}
+
+  /* For Smartphones */
+@media all and (max-width: 670px) {
+
+     /* Add CSS for header-right */
+     .header-right {
+        display: none;
+      }
+
+      /* Add CSS for menu-icon */
+      .menu-icon {
+        display: block;
+      }
+
+    /* main 2 */
+    .column {
+        float: left;
+        width: 100%;
+    }
+
+    .row1 {
+        padding-left: 5%;
+    }
+
+    /* main 3 */
+    .column1 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .main3 {
+      width: 100%;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size:  1.5rem;
+    }
+
+    .text-center{
+        font-size:1rem;
+    }
+
+    .date{
+        font-size:  12px;
+    }
+
+    .content-item{
+        margin: 0;
+    }
+
+    /* main 1 */
+    .top {
+        padding: 25px 0;
+    }
+    .top-wrapper h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .top-wrapper p {
+        font-size: 15px;
+    }
+
+    .top-wrapper {
+        text-align: center;
+    }
+
+    /* footer */
+    .bottom h3 {
+        font-size: medium;
+    }
+
+    .bottom a {
+        font-size: small;
+    }
+
+    .footer-bottom {
+        font-size: small;
+    }
+
+    /* contact us */
+    .contact {
+        width: 100%;
+    }
+
+    .btn-contact {
+        text-align: center;
+    }
+
+    .submit {
+        width: 100%;
+    }
+  }
