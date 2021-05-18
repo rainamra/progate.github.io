@@ -34,7 +34,7 @@
 
       /* Add CSS for menu-icon */
       .menu-icon {
-        display: block!importannt;
+        display: block;
       }
 
     /* main 2 */
@@ -75,6 +75,11 @@
 
     .content-item{
         margin: 0;
+    }
+    
+    /* main 4 */
+    .quote-text p {
+        font-size:1rem;
     }
 
     /* main 1 */
