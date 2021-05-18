@@ -80,6 +80,10 @@ li {
 
 /* HEADER */
 
+.fa {
+  margin-right: 5px;
+}
+
 header {
     height: 65px;
     width: 100%;
@@ -114,6 +118,14 @@ header {
 
 .header-right a:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display:none !important;
 }
 
 /* MAIN 1 */
@@ -308,44 +320,44 @@ footer {
     float: left;
     width: 50%;
     padding: 0 10px;
-  }
+}
 
-  .row {
+.row {
     margin: 50px -5px;
-  }
+}
 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  .content-item{
+.content-item{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 230px 0 0 0;
     background-size:100%;
     margin: 0 20px;
-  }
+}
 
-  .img1{
+.img1{
     background-image:url(https://placeholder.com/wp-content/uploads/2019/06/lorem-ipsum.webp);
     margin-right: 5px;
-  }
+}
 
-  .img2{
+.img2{
     background-image:url(https://placeholder.com/wp-content/uploads/2019/06/lorem-ipsum.webp);
     margin-left: 5px;
-  }
+}
 
-  .img3{
+.img3{
     background-image:url(https://placeholder.com/wp-content/uploads/2019/06/lorem-ipsum.webp);
     margin-right: 5px;
-  }
+}
 
-  .img4{
+.img4{
     background-image:url(https://placeholder.com/wp-content/uploads/2019/06/lorem-ipsum.webp);
     margin-left: 5px;
-  }
+}
 
 .see {
     background-color: #d76c2d;
@@ -395,12 +407,4 @@ input[type=text],textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
-
-.menu-icon {
-    color: white;
-    float: right;
-    font-size: 30px;
-    padding: 20px 0;
-    display:none!important;
 }
