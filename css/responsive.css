@@ -1,10 +1,19 @@
 /* For Tablets */
 @media all and (max-width: 1000px) {
+    
+    .header-right {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
     .main3 {
         width: 50%;
     }
 
-  .column1 {
+    .column1 {
         width: 50%;
         display: block;
         margin-bottom: 20px;
@@ -27,12 +36,10 @@
   /* For Smartphones */
 @media all and (max-width: 670px) {
 
-     /* Add CSS for header-right */
      .header-right {
         display: none;
       }
 
-      /* Add CSS for menu-icon */
       .menu-icon {
         display: block;
       }
@@ -75,11 +82,6 @@
 
     .content-item{
         margin: 0;
-    }
-    
-    /* main 4 */
-    .quote-text p {
-        font-size: 2rem;
     }
 
     /* main 1 */
