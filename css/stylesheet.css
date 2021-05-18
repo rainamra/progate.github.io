@@ -396,3 +396,7 @@ input[type=text],textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
+.menu-icon {
+    display:none !important;
+}
